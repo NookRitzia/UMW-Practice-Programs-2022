@@ -24,7 +24,7 @@ public class ProblemL
          for (int j = 0; j < messages[i].length(); j++) // perform the character shift on each character in the message then add it to output
             output[i] += charShift(messages[i].charAt(j));
             
-         for (int j = 0; j < messages[i].length(); j+=4) // perform the inner outter swap 
+         for (int j = 0; j < messages[i].length(); j+=4) // perform the inner and outter swap 
          {
             String temp = output[i].substring(j, j+4); // temp var to store the block being swapped
             temp = "" + temp.charAt(3) + temp.charAt(2) + temp.charAt(1) + temp.charAt(0); // swap, ideally you could make a reversed loop but works either way
